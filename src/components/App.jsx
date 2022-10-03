@@ -1,8 +1,10 @@
-fetch(process.env.BABY_URL).then(res => {
-  return res.json().then(console.log);
-});
+import useSearch from '../hooks/use-search';
+
+
 export default function App() {
-  
-  
+  const { types } = useSearch();
+  // console.log('types', types);
+ 
+
   return <div>Hello World</div>;
 }
